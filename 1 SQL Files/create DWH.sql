@@ -1,0 +1,11 @@
+USE [master]
+GO
+
+CREATE DATABASE [E-Commerce-DWH]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'[E-Commerce-DWH]', FILENAME = N'D:\database\All Data\[E-Commerce-DWH].mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'[E-Commerce-DWH]_log', FILENAME = N'D:\database\All Data\[E-Commerce-DWH]_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT
+GO
